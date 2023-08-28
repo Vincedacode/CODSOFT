@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+
+
+}
+ 
+
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-family: 'Barlow', sans-serif;
+}
+
+nav {
+    color: white;
+    height: 80px;
+    margin: 0 auto 0px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+
+}
+
+nav .logo {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+}
+
+nav ul li a:hover {
+    color:lightgreen;
+}
+.con-style{
+    background-color: lavender;
+}
+
+.container {
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    height: 700px;
+    background-image: linear-gradient(50deg,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.5) 80%),
+        url(/portfolio/static/img/bg9.webp);
+    text-align: center;
+
+
+}
+
+#sub-container {
+    display: flex;
+}
+
+
+
+
+
+.progress {
+    width: 100%;
+    height: 18px;
+    background-color: gray;
+    border-radius: 10px;
+
+
+}
+
+.progress .progress-bar {
+
+    width: 0%;
+    opacity: 0;
+    background-color: orangered;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+    transition: all .5s;
+
+}
+
+.progress-bar span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+
+
+}
+
+p {
+    margin-top: 20px;
+}
+
+.skill-box {
+
+    width: 100%;
+    margin: 25px 0;
+
+}
+
+.skill-box .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.skill-box .skill-bar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    height: 8px;
+    margin-top: 6px;
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 6px;
+    background: lightgreen;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.css {
+
+    width: 70%;
+
+
+}
+
+.skill-per.jQUERY {
+
+    width: 50%;
+
+
+}
+
+.skill-per.js {
+
+    width: 30%;
+
+
+}
+
+.skill-per.mySQL {
+
+    width: 40%;
+
+
+}
+
+.skill-per.python {
+
+    width: 50%;
+
+
+}
+
+.skill-per.DJANGO {
+
+    width: 60%;
+
+
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+
+
+        opacity: 1;
+    }
+
+
+}
+
+.skill-per .tooltap {
+    position: absolute;
+    right: -14px;
+    background: lightgreen;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #fff;
+    z-index: 1;
+
+
+}
+
+.tooltap::before {
+    content: '';
+    height: 10px;
+    left: 50%;
+    bottom: -2px;
+    width: 10px;
+    position: absolute;
+    background-color: lightgreen;
+    transform: translateX(-50%)rotate(45deg);
+    z-index: -1;
+}
+
+
+.container3 {
+    display: block;
+}
+
+#text {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(50deg,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.5) 80%),
+        url(/portfolio/static/img/service1.jpeg);
+    padding: 50px;
+    border-radius: 10%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+
+}
+
+#texts {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(50deg,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.5) 80%),
+        url(/portfolio/static/img/service2.webp);
+    padding: 50px;
+    border-radius: 10%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+
+}
+
+#textss {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(50deg,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.5) 80%),
+        url(/portfolio/static/img/service3.webp);
+    padding: 50px;
+    border-radius: 10%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+
+}
+
+#card {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#pre-style {
+    background-color: lightgreen;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.container5 {
+    display: block;
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.footer {
+    background-color: black;
+    color: #fefefe;
+    margin-top: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer .heading {
+    color: #fefefe;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    color: lightgreen;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  
+
